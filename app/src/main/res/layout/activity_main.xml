@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:layout_marginBottom="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imagenewrecord"
+            android:background="@color/purple_200"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editname"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_below="@id/imagenewrecord"
+            android:hint="Product Name"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editprice"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_below="@id/editname"
+            android:hint="Product price"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editdescription"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_below="@id/editprice"
+            android:hint="Product description"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a category"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/categorytxt"
+            android:layout_below="@id/editdescription"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editcategory"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_below="@id/categorytxt"
+            android:hint="Product category"/>
+<!--        <Spinner-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/spinnercategory"-->
+<!--            android:layout_below="@id/category"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"/>-->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:id="@+id/editmanufacturingdate"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_below="@id/editcategory"
+            android:hint="Product manufg date"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonsaveproduct"
+            android:layout_below="@id/editmanufacturingdate"
+            android:text="SAVE PRODUCT"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/viewbutton"
+            android:layout_below="@id/buttonsaveproduct"
+            android:text="VIEW PRODUCT"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

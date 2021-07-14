@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageviewrecord"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_200"
+        android:src="@drawable/ic_baseline_add_a_photo_24"/>
+
+    <TextView android:text="Name:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameupdate"
+        android:textSize="20dp"
+        android:hint="Name"
+        android:ems="10"/>
+    <TextView android:text="price:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:id="@+id/priceupdate"
+        android:hint="price"
+        android:ems="10"/>
+
+    <TextView android:text="Description:"
+        android:textStyle="bold"
+        android:textColor="#000"
+
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:id="@+id/descupdate"
+        android:hint="desc"
+        android:ems="10"/>
+
+    <TextView android:text="Category:"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:id="@+id/cateupdate"
+        android:hint="category"
+        android:ems="10"/>
+    <TextView android:text="Made:"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:id="@+id/mfgdateupdate"
+        android:hint="mfgdate"
+        android:ems="10"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/btnupdate"
+        android:layout_marginTop="30dp"
+        android:layout_height="70dp"
+        android:text="CANCEL"/>
+    <Button
+        android:layout_width="30dp"
+        android:id="@+id/sharing"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_share_24"
+        />
+
+</LinearLayout>
